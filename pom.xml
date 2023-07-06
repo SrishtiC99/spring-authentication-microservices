@@ -21,6 +21,7 @@
         <module>api-gateway</module>
         <module>admin-service</module>
         <module>customer-service</module>
+        <module>service-registry</module>
     </modules>
 
     <properties>
