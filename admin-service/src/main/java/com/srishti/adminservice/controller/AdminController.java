@@ -10,8 +10,8 @@ public class AdminController {
 
     @PostMapping("/")
     @ResponseStatus(HttpStatus.CREATED)
-    public String createAdmin() {
-        return "object created";
+    public String createAdmin(@RequestHeader("loggedInUser") String username) {
+        return "object created by user: " + username;
     }
 
     @GetMapping
